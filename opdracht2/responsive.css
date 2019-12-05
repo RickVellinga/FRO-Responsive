@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap');
+
+body {
+  background-image: url("../afbeeldingen/blurred-7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ddd;
+  background-color: #000;
+  margin: 0;
+}
+
+h1 {
+  color: #ccc;
+}
+
+.masthead {
+  color: white;
+  text-align: center;
+  font-family: 'Zilla Slab', serif;
+  font-size: 2em;
+  padding: 0%;
+  margin-left: 0.2em;
+}
+
+.tagline {
+  color: white;
+  padding: 0%;
+  font-family: 'Zilla Slab', serif;
+  text-align: center;
+  font-size: 2em;
+  margin-left: 0.2em;
+}
+
+li {
+  color: white;
+  text-decoration: none;
+}
+
+.auteur {
+  color: white;
+  text-align: center;
+  font-family: 'Zilla Slab', serif;
+  padding: 0%;
+  font-size: 2em;
+  margin-left: 0.2em
+}
+
+.tipss1 {
+  color: white;
+  font-family: 'Zilla Slab', serif;
+  padding: 0%;
+  font-size: 2em;
+  margin-left: 0.5em
+}
+
+.tips {
+  margin: 1%;
+  text-align: center;
+  font-family: 'Zilla Slab', serif;
+}
+
+.kleur {
+  margin: 1%;
+  background-color: #708090;
+}
+
+.kleur1 {
+  margin: 1%;
+  background-color: white;
+  color: black;
+}
+
+.teksttip {
+  font-size: 200%;
+  font-family: 'Zilla Slab', serif;
+}
+
+.aside {
+  font-size: 150%;
+}
+
+.footer {
+  font-size: 200%;
+  text-align: left;
+}
+
+/* de twee-klkoloms layout  */
+@media screen and (min-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section {
+    grid-column: 1/4;
+  }
+
+  header {
+    grid-column: 1/4;
+  }
+
+  .border {
+    grid-column: 1/4;
+    /* zelf ook een grid-parent  */
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+}
+
+a {
+
+  color: white;
+}
+
+/* de drie-colums layout */
+@media screen and (min-width: 1400px) {
+  .border {
+    grid-column: 1/4;
+    /* zelf ook een grid-parent  */
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  header {
+    grid-column: 1/4;
+  }
+}
+
+#validatie img {
+  height: 1em;
+  width: auto;
+  border: 0;
+  margin: 0 .3em;
+}
